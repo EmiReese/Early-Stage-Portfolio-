@@ -1,0 +1,94 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* HEADER */ 
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: white; 
+    color: black;
+    margin: 0;
+}
+
+header h1 {
+    margin-left: 5%;
+    font-size: 1.5em;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    width: 50%;
+}
+
+
+header nav {
+    margin-right: 5%;  
+    font-family: 'Amiri', serif;
+    align-items: center;
+    color: black;
+   display: flex;
+   flex-wrap: wrap;
+   width: 50%;
+   margin-left:  5%;
+}
+
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 5%;
+}
+
+h2{
+    padding: 5%;
+    text-align: end;
+}
+
+.page-section  {
+   display: flex;
+    padding: 5%;
+  }
+
+.page-section h3 {
+    border-right: 5px solid black;
+    margin-right: 5%;
+    padding: 5%;
+}
+
+p {
+    width: 70%;
+    word-wrap: normal;
+}
+
+.portfolioImg {
+    height: 200px;
+    width: 200px;
+}
+
+.address a {
+    padding: 2%;
+}
+
+#workSection{
+width: 100%;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+}
+
+#contactSection{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    }
+
+    #contactSection a {
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        top: 20%;
+    }
