@@ -1,4 +1,5 @@
 # Early-Stage-Portfolio-
-This is the first portfolio I am creating for my websites I have created. This will be updated as time goes on. 
 
-This is all I was able to complete in the timne fram that was given. 
+This is the first portfolio I have created for my future career in web development. I have added examples of work completed by myself and work that was created within a group.
+
+https://emireese.github.io/Early-Stage-Portfolio-/

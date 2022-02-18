@@ -1,191 +1,197 @@
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* HEADER */ 
+/* HEADER */
 /* Color Theme Swatches in Hex */
 :root {
---secondary-color: (rgba(242, 201, 204, 1));
---accent-color: rgb(198, 143, 147);
- --pink-color: rgba(216, 169, 169, 1);
---neutral-dark: rgba(89, 72, 72, 1);
---neutral-light: rgba(140, 123, 123, 1); 
---primary-color:  rgba(242, 215, 215, 1)
+  --secondary-color: (rgba(242, 201, 204, 1));
+  --accent-color: rgb(198, 143, 147);
+  --pink-color: rgba(216, 169, 169, 1);
+  --neutral-dark: rgba(89, 72, 72, 1);
+  --neutral-light: rgba(140, 123, 123, 1);
+  --primary-color: rgba(242, 215, 215, 1);
 }
 /* font-family: 'Raleway', sans-serif;; 
 font-family: 'Lora', serif;
 font-family: 'Source Serif Pro', serif; */
 
 header {
-    display: flex; 
-    justify-content: space-between;
-    align-items: baseline;
-   color: black;
-    margin: 0;
-    background-color:  #F2DCE0;
-    margin-bottom: 0;
-    height: 70%;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: black;
+  margin: 0;
+  background-color: #f2dce0;
+  margin-bottom: 0;
+  height: 70%;
+  border-bottom: 0.31rem solid var(--pink-color);
 }
 
-body{
-    background-color: white;
-    color: var(--neutral-dark);
-    font-family: Raleway;
+body {
+  background-color: white;
+  color: var(--neutral-dark);
+  font-family: Raleway;
 }
 
 header h1 {
-    margin-left: 5%;
-    font-size: 3em;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 2.5rem;
-    width: 50%;
-    font-family: 'Lora', serif;
+  margin-left: 5%;
+  font-size: 3em;
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.5rem;
+  width: 50%;
+  font-family: "Lora", serif;
 }
-
 
 header nav {
-    margin-right: 5%;  
-    font-family: 'Amiri', serif;
-    align-items: center;
-   display: flex;
-   flex-wrap: wrap;
-   width: 50%;
-   margin-left:  5%;
+  margin-right: 5%;
+  font-family: "Amiri", serif;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-left: 5%;
 }
-
 
 nav a {
-    text-decoration: none;
-    font-size: 2rem;
-    padding: 5%;
-    font-family: 'Source Serif Pro', serif; 
-    color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 5%;
+  font-family: "Source Serif Pro", serif;
+  color: black;
 }
 
-nav a:hover{
-    color:var(--neutral-light);
+nav a:hover {
+  color: var(--neutral-light);
 }
 
-nav a:visited{
-    color: 
-    #B37298;
-    
+nav a:visited {
+  color: #b37298;
 }
 
-
-h2{
-    padding: 5%;
-    text-align: end;
-    font-size: 2.5rem;
-    font-family: 'Noto Serif', serif;
-    margin-right: 15%;
-    width: 100%;
-    margin-top: 0;
-    height: 70%;
-    color: black;
-   background-color:  #F2DCE0;
-
+.mainwrap h3 {
+  width: 20%;
+}
+.page-section {
+  display: flex;
+  padding: 5%;
+  margin-top: 5%;
 }
 
-.mainwrap h3{
-    width: 20%;
+.page-section h3 {
+  border-right: 0.31rem solid var(--pink-color);
+  /* margin-right: 5%;
+    padding: 5%; */
+  font-family: "Lora", serif;
+  font-size: 2.5rem;
+  word-wrap: normal;
 }
-.page-section  {
-   display: flex;
+
+p {
+  width: 70%;
+  word-wrap: normal;
+  font-size: 1.5rem;
+  margin-left: 10%;
+  font-family: "Unna", serif;
+}
+
+.portfolioImg {
+  height: 25rem;
+  width: 18.75rem;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0.31rem 0.625rem 1.125rem var(--neutral-dark);
+  opacity: 0.3s;
+}
+.portfolioImg:hover {
+  transform: translate(1%, -6%);
+}
+
+.portfolio1 {
+  height: 25rem;
+  width: 18.75rem;
+}
+
+.portfolio2 {
+  height: 21.87rem;
+  width: 15.62rem;
+}
+
+.portfolio3 {
+  height: 18.75rem;
+  width: 12.5rem;
+}
+
+.address a {
+  padding: 2%;
+}
+
+#workSection {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#contactSection {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contactSection a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  top: 20%;
+  font-family: "Unna", serif;
+  text-decoration: rgb(198, 143, 147);
+}
+
+#contactSection a:hover {
+  color: var(--neutral-light);
+}
+
+#contactSection a:visited {
+  color: #b37298;
+}
+
+@media screen and (max-width: 780px) {
+  * {
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+  body {
+    flex-wrap: wrap;
+  }
+  nav {
+    flex-direction: column;
+  }
+
+  .page-section {
+    display: flex;
     padding: 5%;
     margin-top: 5%;
   }
 
-.page-section h3 {
-    border-right: .31rem solid var(--pink-color);
-    /* margin-right: 5%;
-    padding: 5%; */
-    font-family: 'Lora', serif;
+  .page-section h3 {
+    border: none;
+    font-family: "Lora", serif;
     font-size: 2.5rem;
     word-wrap: normal;
-}
+  }
 
-p {
+  .portfolioItem {
+    width: 1000%;
+    float: right;
+  }
+
+  #contactSection {
+    flex-wrap: wrap;
+  }
+  #contactSection a {
     width: 70%;
-    word-wrap: normal;
-    font-size: 1.5rem;
-    margin-left: 10%;
-    font-family: 'Unna', serif;
-
+  }
 }
-
-.portfolioImg {
-    height: 25rem;
-    width: 18.75rem;
-    padding: 0;
-    margin: 0;
-    box-shadow: .31rem .625rem 1.125rem var(--neutral-dark);
-    opacity: 0.3s;
-} 
-.portfolioImg:hover
-{
-    transform: translate(1%, -6%);
-}
-
-.portfolio1{
-    height: 25rem;
-    width: 18.75rem;
-}
-
-.portfolio2{
-    height: 21.87rem;
-    width: 15.62rem;
-}
-
-.portfolio3 {
-    height: 18.75rem;
-    width: 12.5rem;
-}
-
-.address a {
-    padding: 2%;
-}
-
-#workSection{
-width: 100%;
-display: flex;
-flex-flow: row wrap;
-justify-content: space-between;
-}
-
-#contactSection{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    }
-
-    #contactSection a {
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: black;
-        top: 20%;
-        font-family: 'Unna', serif;
-        text-decoration: rgb(198, 143, 147);
-    }
-
-    #contactSection a:hover{
-            color: var(--neutral-light);
-        }
-        
-        #contactSection a:visited{
-            color: 
-            #B37298;    
-        }
-        
-        @media screen and (max-width: 1280px) {
-            *{
-                font-size: 10px; 
-                display: flex;
-                flex-direction: column;
-
-            }
-          }
